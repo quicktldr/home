@@ -1,0 +1,255 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+      <title>QuickTLDR - Daily TLDR of your slack channels</title>
+      <meta name="description" content="Daily TLDR of your slack channels. Save time, and stay informed. Don't miss anything important">
+      <link rel="canonical" href="https://quicktldr.com" />
+      <!-- <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23e7be6e%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>⌛</text></svg>" /> -->
+      <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%220%22 fill=%22%236ee7b4%22></rect><path fill=%22%23fff%22 d=%22M23.72 40.60L17.12 40.60L17.12 62.08Q16.92 62.16 16.50 62.26Q16.08 62.36 15.64 62.36L15.64 62.36Q13.88 62.36 13.88 60.88L13.88 60.88L13.88 40.60L6.40 40.60Q6.28 40.40 6.16 40.06Q6.04 39.72 6.04 39.28L6.04 39.28Q6.04 38.60 6.36 38.22Q6.68 37.84 7.28 37.84L7.28 37.84L24.60 37.84Q24.72 38.04 24.84 38.38Q24.96 38.72 24.96 39.12L24.96 39.12Q24.96 39.80 24.64 40.20Q24.32 40.60 23.72 40.60L23.72 40.60ZM31.28 62.16L31.28 62.16Q30.52 62.16 30.02 61.68Q29.52 61.20 29.52 60.40L29.52 60.40L29.52 37.92Q29.72 37.84 30.14 37.74Q30.56 37.64 31.04 37.64L31.04 37.64Q32.80 37.64 32.80 39.12L32.80 39.12L32.80 59.36L44.28 59.36Q44.72 59.80 44.72 60.68L44.72 60.68Q44.72 61.36 44.36 61.76Q44 62.16 43.40 62.16L43.40 62.16L31.28 62.16ZM66.60 49.72L66.60 49.72Q66.60 47.16 65.82 45.34Q65.04 43.52 63.70 42.36Q62.36 41.20 60.58 40.66Q58.80 40.12 56.76 40.12L56.76 40.12Q55.48 40.12 54.54 40.20Q53.60 40.28 52.80 40.44L52.80 40.44L52.80 59.48Q53.76 59.72 54.86 59.80Q55.96 59.88 57.12 59.88L57.12 59.88Q61.84 59.88 64.22 57.32Q66.60 54.76 66.60 49.72ZM69.92 49.72L69.92 49.72Q69.92 53 69.02 55.42Q68.12 57.84 66.46 59.44Q64.80 61.04 62.44 61.82Q60.08 62.60 57.16 62.60L57.16 62.60Q55.88 62.60 54.28 62.50Q52.68 62.40 51.24 61.96L51.24 61.96Q49.56 61.44 49.56 60.12L49.56 60.12L49.56 39.56Q49.56 38.92 49.88 38.58Q50.20 38.24 50.88 38.04L50.88 38.04Q52.12 37.64 53.68 37.52Q55.24 37.40 56.80 37.40L56.80 37.40Q59.72 37.40 62.14 38.18Q64.56 38.96 66.28 40.50Q68 42.04 68.96 44.34Q69.92 46.64 69.92 49.72ZM78.92 52.96L78.92 62.08Q78.68 62.16 78.28 62.26Q77.88 62.36 77.40 62.36L77.40 62.36Q75.64 62.36 75.64 60.88L75.64 60.88L75.64 39.60Q75.64 38.96 75.96 38.62Q76.28 38.28 76.96 38.08L76.96 38.08Q78.12 37.72 79.82 37.56Q81.52 37.40 83.12 37.40L83.12 37.40Q88.16 37.40 90.62 39.42Q93.08 41.44 93.08 45.16L93.08 45.16Q93.08 47.92 91.66 49.80Q90.24 51.68 87.36 52.48L87.36 52.48Q88.36 53.76 89.36 55.04Q90.36 56.32 91.26 57.46Q92.16 58.60 92.86 59.52Q93.56 60.44 93.96 60.96L93.96 60.96Q93.80 61.64 93.26 62.04Q92.72 62.44 92.16 62.44L92.16 62.44Q91.48 62.44 91.04 62.12Q90.60 61.80 90.12 61.12L90.12 61.12L84.28 52.96L78.92 52.96ZM78.88 50.24L83.48 50.24Q86.44 50.24 88.12 48.96Q89.80 47.68 89.80 45.16L89.80 45.16Q89.80 42.64 88.04 41.38Q86.28 40.12 83 40.12L83 40.12Q81.92 40.12 80.82 40.22Q79.72 40.32 78.88 40.48L78.88 40.48L78.88 50.24Z%22></path></svg>" />
+
+      
+      <!-- Facebook Meta Tags -->
+      <meta property="og:url" content="https://quicktldr.com">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="QuickTLDR - Daily TLDR of your slack channels">
+      <meta property="og:description" content="Daily TLDR of your slack channels. Save time, and stay informed. Don't miss anything important">
+      <meta property="og:image" content="https://quicktldr.com/demo.png">
+
+      <!-- Twitter Meta Tags -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="twitter:domain" content="nodablock.com">
+      <meta property="twitter:url" content="https://nodablock.com">
+      <meta name="twitter:title" content="QuickTLDR - Daily TLDR of your slack channels">
+      <meta name="twitter:description" content="Daily TLDR of your slack channels. Save time, and stay informed. Don't miss anything important">
+      <meta name="twitter:image" content="https://quicktldr.com/demo.png">
+
+    
+
+    <style>
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+      	--tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+      body {
+      	font-feature-settings: "cv03", "cv04", "cv11";
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css">
+
+</head>
+
+  <body>
+    <div class="page">
+      <!-- Navbar -->
+      <header class="navbar navbar-expand-md navbar-dark d-print-none">
+        <div class="container-xl">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h2 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+            <a href="/">
+              QuickTLDR - Daily TLDR of your slack channels
+            </a>
+          </h2>
+          <div class="navbar-nav flex-row order-md-last">
+            <div class="nav-item d-none d-md-flex me-3">
+              <div class="btn-list">
+                <a href="https://twitter.com/nodablock" class="btn btn-dark" target="_blank" rel="noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+                 </svg>
+                  Twitter
+                </a>
+              </div>
+            </div>
+
+            <div class="nav-item d-none d-md-flex me-3">
+              <div class="btn-list">
+                <a href="https://t.me/+6rHxK8G3XdFjOTk8" class="btn btn-dark" target="_blank" rel="noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
+                  </svg>  
+                  Telegram
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </header>
+      <div class="navbar-expand-md">
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <div class="navbar navbar-light">
+            <div class="container-xl">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/" >
+                    <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="5 12 3 12 12 3 21 12 19 12" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                    </span>
+                    <span class="nav-link-title">
+                      Home
+                    </span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <!-- Page header -->
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                <!-- Page pre-title -->
+                
+                
+              </div>
+
+              
+
+
+            </div>
+          </div>
+        </div>
+        <!-- Page body -->
+        <div class="page-body">
+        
+
+<div class="container container-narrow py-1">
+    <div class="row row-cards">
+        <div class="card">
+          <div class="card-header">
+            <h1 class="card-title" style="font-size: 1.3rem;">Receive Daily Digest of your busy slack channels</h1>
+          </div>
+
+          <img src="demo.png" />
+
+          <div class="card-body">
+            <h2> Don't miss any important conversations anymore </h2>
+            <ul>
+              <li>
+                You select the channels you want to receive a daily digest of
+              </li>
+
+              <li>
+                Digests are sent at the end of your day
+              </li>
+
+              <li>
+                We don't store any of your conversations data
+              </li>
+
+            </ul>
+
+            <div class="mb-2 col-auto p-4 py-1">
+                <a href="https://forms.gle/DfKqcgTFZQasi4JY9" class="btn btn-primary btn-square p-2 w-100">
+                  Get Early access
+                </a>
+              </div>
+  
+            <div>
+              <!-- <h3 class="text-center">Nodablock is a <b>Web3</b> analytics platform</h3> -->
+
+              <!-- <div class="img-responsive card-img-bottom" style="background-image: url(./static/demo.gif); height: 800px;"></div> -->
+              <!-- <div class="img-responsive card-img-bottom" style="background-image: url(./static/screenshot.png)"></div> -->
+
+              <!-- <br/> -->
+
+
+              <!-- <form action="https://gmail.us18.list-manage.com/subscribe/post?u=ec6d196d7f3b6aeb76dca29fb&amp;id=c7ed5c8c50&amp;f_id=002528e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+                <div class="mb-3">
+                  <label class="form-label" for="mce-EMAIL">Email address *</label>
+                  <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Enter email" required>
+
+                  <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div> 
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec6d196d7f3b6aeb76dca29fb_c7ed5c8c50" tabindex="-1" value=""></div>
+              </div>
+
+              <div class="form-footer">
+                <input type="submit" value="Join the waiting list" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary w-100">
+              </div>
+            </form> -->
+            <div class="form-footer">
+            <!-- <div class="mb-4 col-auto p-3 py-1">
+              <a href="/signup" class="btn btn-primary btn-square p-2 w-100">
+                Start Tracking my Smart Contract
+              </a>
+            </div> -->
+          </div>
+
+            </div>
+
+          </div>         
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container container-xl mt-4">
+
+</div>
+
+
+        </div>
+
+
+        <!-- Page footer -->
+        <footer class="footer footer-transparent d-print-none">
+          <div class="container-xl">
+            <div class="row text-center align-items-center flex-row-reverse">
+              <div class="col-lg-auto ms-lg-auto">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item"><a href="/cdn-cgi/l/email-protection#503839103e3f3431323c3f333b7e333f3d6f2325323a3533246d1d3f2235756260193e363f75626031323f25247562601e3f3431323c3f333b" class="link-secondary">Contact</a></li>
+                  <li class="list-inline-item"><a href="/about" class="link-secondary">About</a></li>
+                  <li class="list-inline-item"><a href="/terms-of-service" class="link-secondary">Terms of service</a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/nodablock" class="link-secondary">Twitter</a></li>
+                  <li class="list-inline-item"><a href="https://t.me/+6rHxK8G3XdFjOTk8" class="link-secondary">Telegram</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item">
+                    Copyright &copy; 2023
+                    <a href="." class="link-secondary">QuickTLDR</a>.
+                    All rights reserved.
+                  </li>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+      </div>
+    </div>
+  <!-- Google tag (gtag.js) -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-DR0LN71M0L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DR0LN71M0L');
+  </script>
+
+  </body>
+  
+
+</html>
